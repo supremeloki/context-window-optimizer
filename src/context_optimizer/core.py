@@ -32,3 +32,4 @@ class ContextBlock:
     priority: Priority
     pinned: bool = False
 
+    @property
