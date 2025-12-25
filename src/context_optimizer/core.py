@@ -35,3 +35,4 @@ class ContextBlock:
     @property
     def tokens(self) -> int:
         return estimate_tokens(self.content)
+
