@@ -36,3 +36,5 @@ class ContextBlock:
     def tokens(self) -> int:
         return estimate_tokens(self.content)
 
+
+def estimate_tokens(text: str) -> int:
