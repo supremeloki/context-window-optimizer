@@ -33,3 +33,5 @@ class ContextBlock:
     pinned: bool = False
 
     @property
+    def tokens(self) -> int:
+        return estimate_tokens(self.content)
