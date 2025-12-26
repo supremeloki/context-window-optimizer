@@ -39,3 +39,5 @@ class ContextBlock:
 
 def estimate_tokens(text: str) -> int:
     return len(TOKEN_ESTIMATE_PATTERN.findall(text))
+
+
