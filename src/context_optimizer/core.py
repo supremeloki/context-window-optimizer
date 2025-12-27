@@ -42,3 +42,5 @@ def estimate_tokens(text: str) -> int:
 
 
 @dataclass(frozen=True)
+class OptimizationReport:
+    original_tokens: int
