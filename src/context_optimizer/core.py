@@ -45,3 +45,5 @@ def estimate_tokens(text: str) -> int:
 class OptimizationReport:
     original_tokens: int
     optimized_tokens: int
+    dropped_block_ids: tuple[str, ...]
+    compressed_block_ids: tuple[str, ...]
