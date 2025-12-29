@@ -50,3 +50,4 @@ class OptimizationReport:
 
     @property
     def saved_tokens(self) -> int:
+        return self.original_tokens - self.optimized_tokens
