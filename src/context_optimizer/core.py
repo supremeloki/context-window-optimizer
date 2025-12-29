@@ -48,3 +48,5 @@ class OptimizationReport:
     dropped_block_ids: tuple[str, ...]
     compressed_block_ids: tuple[str, ...]
 
+    @property
+    def saved_tokens(self) -> int:
