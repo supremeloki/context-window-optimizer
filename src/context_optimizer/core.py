@@ -54,3 +54,5 @@ class OptimizationReport:
 
     @property
     def savings_ratio(self) -> float:
+        if self.original_tokens == 0:
+            return 0.0
