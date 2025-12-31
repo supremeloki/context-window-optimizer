@@ -59,3 +59,4 @@ class OptimizationReport:
         return round(1.0 - self.optimized_tokens / self.original_tokens, 4)
 
 
+class Compressor:
