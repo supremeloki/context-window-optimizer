@@ -57,3 +57,5 @@ class OptimizationReport:
         if self.original_tokens == 0:
             return 0.0
         return round(1.0 - self.optimized_tokens / self.original_tokens, 4)
+
+
