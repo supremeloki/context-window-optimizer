@@ -60,3 +60,4 @@ class OptimizationReport:
 
 
 class Compressor:
+    def __init__(self,
