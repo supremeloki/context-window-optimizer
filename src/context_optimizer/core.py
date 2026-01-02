@@ -63,3 +63,4 @@ class Compressor:
     def __init__(self,
                  filler_patterns: Sequence[str] = (
                      r"^(um|uh|well|so|basically|actually)[,\s]+",
+                     r"\b(please note that|it should be noted that|as you know)\b",
