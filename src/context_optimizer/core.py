@@ -64,3 +64,5 @@ class Compressor:
                  filler_patterns: Sequence[str] = (
                      r"^(um|uh|well|so|basically|actually)[,\s]+",
                      r"\b(please note that|it should be noted that|as you know)\b",
+                 ),
+                 collapse_whitespace: bool = True) -> None:
