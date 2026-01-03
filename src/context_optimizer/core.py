@@ -66,3 +66,4 @@ class Compressor:
                      r"\b(please note that|it should be noted that|as you know)\b",
                  ),
                  collapse_whitespace: bool = True) -> None:
+        self._patterns = [re.compile(p, re.IGNORECASE) for p in filler_patterns]
