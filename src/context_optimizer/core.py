@@ -67,3 +67,5 @@ class Compressor:
                  ),
                  collapse_whitespace: bool = True) -> None:
         self._patterns = [re.compile(p, re.IGNORECASE) for p in filler_patterns]
+        self._collapse = collapse_whitespace
+
