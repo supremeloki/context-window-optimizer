@@ -69,3 +69,4 @@ class Compressor:
         self._patterns = [re.compile(p, re.IGNORECASE) for p in filler_patterns]
         self._collapse = collapse_whitespace
 
+    def compress(self, text: str) -> str:
