@@ -72,3 +72,4 @@ class Compressor:
     def compress(self, text: str) -> str:
         result = text
         for pattern in self._patterns:
+            result = pattern.sub("", result)
