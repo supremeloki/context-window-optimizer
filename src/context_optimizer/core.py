@@ -70,3 +70,5 @@ class Compressor:
         self._collapse = collapse_whitespace
 
     def compress(self, text: str) -> str:
+        result = text
+        for pattern in self._patterns:
