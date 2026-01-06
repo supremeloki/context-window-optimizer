@@ -73,3 +73,5 @@ class Compressor:
         result = text
         for pattern in self._patterns:
             result = pattern.sub("", result)
+        if self._collapse:
+            result = re.sub(r"[ \t]{2,}", " ", result)
