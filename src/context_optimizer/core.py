@@ -75,3 +75,4 @@ class Compressor:
             result = pattern.sub("", result)
         if self._collapse:
             result = re.sub(r"[ \t]{2,}", " ", result)
+            result = re.sub(r"\n{3,}", "\n\n", result).strip()
