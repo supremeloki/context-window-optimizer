@@ -76,3 +76,5 @@ class Compressor:
         if self._collapse:
             result = re.sub(r"[ \t]{2,}", " ", result)
             result = re.sub(r"\n{3,}", "\n\n", result).strip()
+        return result
+
