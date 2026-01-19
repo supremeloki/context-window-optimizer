@@ -78,3 +78,4 @@ class Compressor:
             result = re.sub(r"\n{3,}", "\n\n", result).strip()
         return result
 
+    @property
