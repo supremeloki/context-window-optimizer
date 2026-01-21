@@ -81,3 +81,4 @@ class Compressor:
     @property
     def is_lossless_heuristic(self) -> bool:
         return True
+
