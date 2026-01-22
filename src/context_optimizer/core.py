@@ -82,3 +82,5 @@ class Compressor:
     def is_lossless_heuristic(self) -> bool:
         return True
 
+
+class ContextWindowOptimizer:
