@@ -84,3 +84,4 @@ class Compressor:
 
 
 class ContextWindowOptimizer:
+    def __init__(self, token_budget: int,
