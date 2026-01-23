@@ -85,3 +85,5 @@ class Compressor:
 
 class ContextWindowOptimizer:
     def __init__(self, token_budget: int,
+                 compressor: Compressor | None = None,
+                 hard_fail_on_overflow: bool = False) -> None:
