@@ -90,3 +90,4 @@ class ContextWindowOptimizer:
         if token_budget < 1:
             raise ContextOptimizerError("token budget must be >= 1")
         self._budget = token_budget
+        self._compressor = compressor or Compressor()
