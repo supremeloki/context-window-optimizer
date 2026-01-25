@@ -92,3 +92,5 @@ class ContextWindowOptimizer:
         self._budget = token_budget
         self._compressor = compressor or Compressor()
         self._hard_fail = hard_fail_on_overflow
+
+    @property
