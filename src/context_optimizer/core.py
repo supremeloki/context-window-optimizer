@@ -94,3 +94,4 @@ class ContextWindowOptimizer:
         self._hard_fail = hard_fail_on_overflow
 
     @property
+    def budget(self) -> int:
