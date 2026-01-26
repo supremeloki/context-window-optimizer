@@ -95,3 +95,5 @@ class ContextWindowOptimizer:
 
     @property
     def budget(self) -> int:
+        return self._budget
+
