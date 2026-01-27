@@ -79,3 +79,4 @@ def test_compression_applied_when_needed():
     essential = block("essential", 8, Priority.CRITICAL)
     optimized, report = optimizer.optimize([filler, essential])
     assert "chatty" in report.compressed_block_ids or "chatty" in {
+        b.block_id for b in optimized
