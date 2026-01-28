@@ -82,3 +82,4 @@ def test_compression_applied_when_needed():
         b.block_id for b in optimized
     }
     total = sum(b.tokens for b in optimized)
+    assert total <= 18
