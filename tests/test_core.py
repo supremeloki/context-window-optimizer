@@ -80,3 +80,5 @@ def test_compression_applied_when_needed():
     optimized, report = optimizer.optimize([filler, essential])
     assert "chatty" in report.compressed_block_ids or "chatty" in {
         b.block_id for b in optimized
+    }
+    total = sum(b.tokens for b in optimized)
