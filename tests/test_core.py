@@ -85,3 +85,4 @@ def test_compression_applied_when_needed():
     assert total <= 18
 
 
+def test_report_savings_ratio():
