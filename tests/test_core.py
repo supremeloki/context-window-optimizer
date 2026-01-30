@@ -86,3 +86,4 @@ def test_compression_applied_when_needed():
 
 
 def test_report_savings_ratio():
+    optimizer = ContextWindowOptimizer(token_budget=30)
