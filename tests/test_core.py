@@ -89,3 +89,4 @@ def test_report_savings_ratio():
     optimizer = ContextWindowOptimizer(token_budget=30)
     _, report = optimizer.optimize([
         block("x", 25, Priority.HIGH),
+        block("y", 20, Priority.LOW),
