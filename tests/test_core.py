@@ -90,3 +90,4 @@ def test_report_savings_ratio():
     _, report = optimizer.optimize([
         block("x", 25, Priority.HIGH),
         block("y", 20, Priority.LOW),
+    ])
