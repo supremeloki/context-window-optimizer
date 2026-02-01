@@ -91,3 +91,4 @@ def test_report_savings_ratio():
         block("x", 25, Priority.HIGH),
         block("y", 20, Priority.LOW),
     ])
+    assert report.saved_tokens > 0
