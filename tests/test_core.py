@@ -95,3 +95,4 @@ def test_report_savings_ratio():
     assert 0.0 < report.savings_ratio < 1.0
 
 
+def test_original_order_preserved():
