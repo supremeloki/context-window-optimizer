@@ -96,3 +96,4 @@ def test_report_savings_ratio():
 
 
 def test_original_order_preserved():
+    optimizer = ContextWindowOptimizer(token_budget=60)
