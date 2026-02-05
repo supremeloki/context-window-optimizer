@@ -98,3 +98,4 @@ def test_report_savings_ratio():
 def test_original_order_preserved():
     optimizer = ContextWindowOptimizer(token_budget=60)
     blocks = [block("c", 5), block("a", 5), block("b", 5)]
+    optimized, _report = optimizer.optimize(blocks)
