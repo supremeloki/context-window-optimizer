@@ -102,3 +102,4 @@ def test_original_order_preserved():
     assert [b.block_id for b in optimized] == ["c", "a", "b"]
 
 
+def test_fits_check():
