@@ -101,3 +101,4 @@ def test_original_order_preserved():
     optimized, _report = optimizer.optimize(blocks)
     assert [b.block_id for b in optimized] == ["c", "a", "b"]
 
+
