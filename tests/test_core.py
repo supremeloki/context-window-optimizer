@@ -105,3 +105,5 @@ def test_original_order_preserved():
 def test_fits_check():
     optimizer = ContextWindowOptimizer(token_budget=10)
     assert optimizer.fits([block("a", 9)])
+    assert not optimizer.fits([block("a", 11)])
+
