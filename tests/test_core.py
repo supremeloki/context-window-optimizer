@@ -107,3 +107,4 @@ def test_fits_check():
     assert optimizer.fits([block("a", 9)])
     assert not optimizer.fits([block("a", 11)])
 
+
