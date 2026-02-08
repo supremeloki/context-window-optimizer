@@ -108,3 +108,4 @@ def test_fits_check():
     assert not optimizer.fits([block("a", 11)])
 
 
+def test_render_prompt_joins_content():
