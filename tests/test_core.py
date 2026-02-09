@@ -109,3 +109,4 @@ def test_fits_check():
 
 
 def test_render_prompt_joins_content():
+    optimizer = ContextWindowOptimizer(token_budget=100)
