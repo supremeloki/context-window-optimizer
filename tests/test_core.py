@@ -113,3 +113,4 @@ def test_render_prompt_joins_content():
     prompt = optimizer.render_prompt([
         ContextBlock("sys", "system rules here", Priority.CRITICAL),
         ContextBlock("user", "user question", Priority.HIGH),
+    ])
