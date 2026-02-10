@@ -111,3 +111,5 @@ def test_fits_check():
 def test_render_prompt_joins_content():
     optimizer = ContextWindowOptimizer(token_budget=100)
     prompt = optimizer.render_prompt([
+        ContextBlock("sys", "system rules here", Priority.CRITICAL),
+        ContextBlock("user", "user question", Priority.HIGH),
