@@ -114,3 +114,4 @@ def test_render_prompt_joins_content():
         ContextBlock("sys", "system rules here", Priority.CRITICAL),
         ContextBlock("user", "user question", Priority.HIGH),
     ])
+    assert "system rules here" in prompt
