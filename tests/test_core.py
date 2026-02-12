@@ -118,3 +118,5 @@ def test_render_prompt_joins_content():
     assert "user question" in prompt
 
 
+def test_rolling_buffer_stays_under_budget():
+    optimizer = ContextWindowOptimizer(token_budget=40)
