@@ -117,3 +117,4 @@ def test_render_prompt_joins_content():
     assert "system rules here" in prompt
     assert "user question" in prompt
 
+
