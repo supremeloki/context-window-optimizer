@@ -120,3 +120,4 @@ def test_render_prompt_joins_content():
 
 def test_rolling_buffer_stays_under_budget():
     optimizer = ContextWindowOptimizer(token_budget=40)
+    rolling = RollingContextBuffer(optimizer)
