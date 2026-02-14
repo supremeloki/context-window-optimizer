@@ -123,3 +123,4 @@ def test_rolling_buffer_stays_under_budget():
     rolling = RollingContextBuffer(optimizer)
     for index in range(6):
         rolling.append(block(f"m{index}", 15))
+    assert rolling.total_tokens <= 40
