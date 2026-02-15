@@ -124,3 +124,5 @@ def test_rolling_buffer_stays_under_budget():
     for index in range(6):
         rolling.append(block(f"m{index}", 15))
     assert rolling.total_tokens <= 40
+    assert len(rolling.blocks) < 6
+
