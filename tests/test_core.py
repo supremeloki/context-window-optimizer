@@ -126,3 +126,4 @@ def test_rolling_buffer_stays_under_budget():
     assert rolling.total_tokens <= 40
     assert len(rolling.blocks) < 6
 
+
