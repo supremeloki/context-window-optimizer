@@ -127,3 +127,4 @@ def test_rolling_buffer_stays_under_budget():
     assert len(rolling.blocks) < 6
 
 
+def test_compressor_removes_fillers():
