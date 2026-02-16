@@ -128,3 +128,4 @@ def test_rolling_buffer_stays_under_budget():
 
 
 def test_compressor_removes_fillers():
+    compressor = Compressor()
