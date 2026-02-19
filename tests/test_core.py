@@ -133,3 +133,4 @@ def test_compressor_removes_fillers():
     assert "basically" not in squeezed.lower() or "result is" in squeezed.lower()
 
 
+def test_hard_fail_mode():
