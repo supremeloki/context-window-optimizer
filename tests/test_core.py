@@ -132,3 +132,4 @@ def test_compressor_removes_fillers():
     squeezed = compressor.compress("Basically the result is   good")
     assert "basically" not in squeezed.lower() or "result is" in squeezed.lower()
 
+
