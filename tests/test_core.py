@@ -136,3 +136,4 @@ def test_compressor_removes_fillers():
 def test_hard_fail_mode():
     optimizer = ContextWindowOptimizer(token_budget=5, hard_fail_on_overflow=True)
     with pytest.raises(BudgetExceededError):
+        optimizer.optimize([block("huge", 500)])
